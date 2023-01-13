@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;900&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+  overflow: hidden;
+}
+
+.credits {
+  min-height: 100vh;
+  position: relative;
+  animation: credits 25s linear infinite;
+}
+.post-credit {
+  color: #ebebeb;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+.movie {
+  color: #ebebeb;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+.title,
+.description {
+  color: #ebebeb;
+  font-family: "Inter", sans-serif;
+}
+
+.title {
+  font-weight: 700;
+  padding: 20px;
+}
+
+.description {
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-weight: 400;
+}
+
+.directed,
+.inspired,
+.written,
+.main,
+.side,
+.produced,
+.first-time {
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vfx {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes credits {
+  0% {
+    top: 300px;
+  }
+
+  100% {
+    top: -2000px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .post-credit {
+    font-size: 0.9rem;
+  }
+  .directed,
+  .inspired,
+  .written,
+  .main,
+  .side,
+  .first-time {
+    margin-bottom: 10px;
+  }
+}
